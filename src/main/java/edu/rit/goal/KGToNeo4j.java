@@ -29,11 +29,8 @@ public class KGToNeo4j {
 	private static final AtomicInteger currentSplit = new AtomicInteger();
 	
 	public static void main(String[] args) throws Exception {
-//		final String neo4jFolder = args[0], datasetsFolder = args[1];
-//		final int number = Integer.valueOf(args[2]);
-		
-		final String neo4jFolder = "db/", datasetsFolder = "C:\\Users\\crrvcs\\PycharmProjects\\AugmentedKGE\\Datasets\\";
-		final int number = 8;
+		final String neo4jFolder = args[0], datasetsFolder = args[1];
+		final int number = Integer.valueOf(args[2]);
 
 		String commitRateRows = "100000 ROWS";
 		int commitRate = 100000;
@@ -224,3 +221,4 @@ public class KGToNeo4j {
 	}
 
 }
+
